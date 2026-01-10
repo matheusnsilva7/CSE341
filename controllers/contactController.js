@@ -1,0 +1,32 @@
+const mongodb = require("../data/database");
+const ObjectId = require("mongodb").ObjectId;
+
+const getAll = async (req, res) => {
+  const result = await mongodb
+    .getDatabase()
+    .db()
+    .collection("users")
+    .find({}, { projection: { _id: 0 } });
+  result.toArray().then((users) => {
+    res.setHeader("content-type", "application/json");
+    res.status(200).json(users);
+  });
+};
+
+const getOne = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDatabase()
+    .db()
+    .collection("users")
+    .find({ _id: userId });
+  result.toArray().then((users) => {
+    res.setHeader("content-type", "application/json");
+    res.status(200).json(users[0]);
+  });
+};
+
+module.exports = {
+  getAll,
+  getOne,
+};
