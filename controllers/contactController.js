@@ -6,7 +6,7 @@ const getAll = async (req, res) => {
     .getDatabase()
     .db()
     .collection("users")
-    .find({}, { projection: { _id: 0 } });
+    .find();
   result.toArray().then((users) => {
     res.setHeader("content-type", "application/json");
     res.status(200).json(users);
