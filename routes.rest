@@ -1,0 +1,12 @@
+### Get all 
+GET https://cse341-3jc4.onrender.com
+
+### Get contact by id
+GET https://cse341-3jc4.onrender.com/69624f6ad38b4a1004ef7c3f
+
+
+### Get all (LOCAL)
+GET http://localhost:3000/
+
+### Get one contact by ID (LOCAL)
+GET http://localhost:3000/69624f6ad38b4a1004ef7c3f
