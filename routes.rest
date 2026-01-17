@@ -6,7 +6,34 @@ GET https://cse341-3jc4.onrender.com/69624f6ad38b4a1004ef7c3f
 
 
 ### Get all (LOCAL)
-GET http://localhost:3000/
+GET http://localhost:3000/contact
 
 ### Get one contact by ID (LOCAL)
-GET http://localhost:3000/69624f6ad38b4a1004ef7c3f
+GET http://localhost:3000/contact/69624f6ad38b4a1004ef7c3f
+
+### Creat Contact (LOCAL)
+POST http://localhost:3000/contact HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "ashley",
+    "lastName": "weaver",
+    "email" : "aWeaver@test.com",
+    "favoriteColor" : "Brown",
+    "birthday" : "06/19/2000"
+}
+
+### PUT Contact
+PUT http://localhost:3000/contact/696b2a320c5faf1a185692bb HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email" : "test@gmail.com",
+    "favoriteColor" : "green",
+    "birthday" : "12/12/20"
+}
+
+### Delete contact
+DELETE http://localhost:3000/contact/6961fd85d38b4a1004ef7c3d
