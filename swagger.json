@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "User Api",
-    "description": "Users Api",
+    "title": "Contacts Api",
+    "description": "Contacts Api",
     "version": "1.0.0"
   },
   "host": "cse341-3jc4.onrender.com",
@@ -14,7 +14,7 @@
     "/": {
       "get": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "produces": [
@@ -28,7 +28,7 @@
       },
       "post": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "parameters": [
@@ -70,7 +70,7 @@
     "/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "produces": [
@@ -92,7 +92,7 @@
       },
       "put": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "parameters": [
@@ -138,7 +138,7 @@
       },
       "delete": {
         "tags": [
-          "Users"
+          "Contacts"
         ],
         "description": "",
         "parameters": [

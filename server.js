@@ -28,7 +28,7 @@ mongodb.iniDB((err) => {
   if (err) {
     console.log(err);
   } else {
-    app.listen(3000, () => {
+    app.listen(3001, () => {
       console.log(`app running`);
     });
   }
